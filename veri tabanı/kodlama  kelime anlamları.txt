@@ -1,0 +1,20 @@
+create 
+database
+int 
+primary key
+char
+smallint
+identity
+nvarchar
+foreign key references
+
+oluşturmak
+veri tabanı
+int
+birincil anahtar
+karakter
+küçük
+Kimlik
+nvarchar
+yabancı anahtar referansları
+ having count sayımı olan

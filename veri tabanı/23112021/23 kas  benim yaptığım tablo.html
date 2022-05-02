@@ -1,0 +1,105 @@
+create database deneme
+use deneme
+create table tbl_musteri
+(
+Mno int primary key,
+Mno char (7)
+ad nvarchar(30),
+soyad nvarchar(30)
+Madres char(30)
+Mtelefon char(11)
+)
+
+
+
+
+
+
+insert into tbl_musteri (Mno,ad,soyad,Madres,Mtelefon) values
+ ('1','turgut','özseven','turhal/tokat','03562222222')
+ insert into tbl_musteri values ('2','Yılmaz','caglayan','meram/konya','05112111111',)
+insert into tbl_musteri values ('3','Yılmaz','caglayan','meram/konya','05112111111',)
+insert into tbl_musteri values ('4','Yılmaz','caglayan','meram/konya','05112111111',)
+insert into tbl_musteri values ('5','Yılmaz','caglayan','meram/konya','05112111111',)
+insert into tbl_musteri values ('6','Yılmaz','caglayan','meram/konya','05112111111',)
+insert into tbl_musteri values ('7','Yılmaz','caglayan','meram/konya','05112111111',)
+
+
+
+----------------------------------------------------------------------
+create table tbl_arac
+(
+aracno int primary key,
+Model char (4)
+marka nvarchar(30),
+plaka char(9)
+fiyat nvarchar(8)
+
+)
+
+
+
+
+
+
+insert into tbl_arac(aracno,Model,marka,plaka,fiyat) values('1','2004','fiat marea','60tt6060','16.000')
+insert into tbl_arac  values('2','2004','fiat marea','60tt6060','16.000')
+insert into tbl_arac  values('3','2004','fiat marea','60tt6060','16.000')
+insert into tbl_arac  values('4','2004','fiat marea','60tt6060','16.000')
+insert into tbl_arac  values('5','2004','fiat marea','60tt6060','16.000')
+ 
+ ------------------------------------------------------------------------
+ 
+ create table tbl_satis
+(
+satno int primary key,
+Mno char (4)
+aracno  char(10)
+sat_tarih date(10),
+Sfiyat nvarchar(8)
+
+)
+insert into tbl_satis (satno,Mno,aracno,Sat_tarih,Sfiyat) values('1','1','1','04.05.2010','16.000')
+
+ insert into tbl_satis values('2','4','5','04.05.2010','16.000')
+  insert into tbl_satis values('3','7','4','04.05.2010','16.000')
+ insert into tbl_satis values('4','2','1','04.05.2010','16.000')
+
+ ---------------------------------------
+
+  create table tbl_alim
+(
+alimno int primary key,
+Mno char (4)
+aracno  char(10)
+alim_tarih date(10),
+Afiyat nvarchar(8)
+
+)
+insert into tbl_alim (alimno,Mno,aracno,alim_tarih,Afiyat) values('1','1','1','04.05.2010','16.000')
+
+ insert into tbl_alim values('2','4','5','04.05.2010','16.000')
+  insert into tbl_alim values('3','7','4','04.05.2010','16.000')
+ insert into tbl_alim values('4','2','1','04.05.2010','16.000')
+
+ ----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ SELECT * FROM tbl_musteri order by ad asc;
